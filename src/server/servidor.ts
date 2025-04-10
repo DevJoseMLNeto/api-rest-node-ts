@@ -1,14 +1,11 @@
 import express from "express"
+import { rotas } from "./router"
 
 const app = express()
+app.use(express.json())
+app.use(rotas)
 
-app.get("/",(req,res)=>{
-    res.send("Jesus Cristo")
-})
 
-interface Teste {
-    
-}
 
 
 
