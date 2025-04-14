@@ -3,13 +3,15 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "ts-node-dev src/index.ts"
+    "test": "ts-node-dev src/index.ts",
+    "start": "node ./build",
+    "restart": "npx tsc"
   },
   "author": "Jose Morais",
   "license": "MIT",
   "description": "",
   "dependencies": {
+    "dotenv": "^16.5.0",
     "express": "^5.1.0",
     "http-status-codes": "^2.3.0"
   },
